@@ -188,11 +188,11 @@ def report(request):
             center = Health.objects.filter(state = state)
             
             if ldl2 < 90 and hdl2 > 40:
-                list1 = [1, 2, 3, 4]
+                list1 = [10, 20, 30, 40]
                 heart_attact1 = random.choice(list1)
                 risk = 'Low'
             else:
-                list2 = [5,6,7,8,9,10]
+                list2 = [50,60,70,80,90,100]
                 heart_attact1 = random.choice(list2)
                 risk = 'High'
             data = {
